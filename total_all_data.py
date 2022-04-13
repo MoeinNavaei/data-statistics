@@ -18,7 +18,8 @@ def total_all_data(EPG_1397_sima, EPG_1397_ekhtesasi, EPG_1398_ekhtesasi, EPG_13
                    EPG_Aban_1400_first, EPG_Aban_1400_second, EPG_Aban_1400_third, RegisterActiveUsers_Aban_1400,
                    EPG_Azar_1400_first, EPG_Azar_1400_second, EPG_Azar_1400_third, RegisterActiveUsers_Azar_1400,
                    EPG_Dey_1400_first, EPG_Dey_1400_second, EPG_Dey_1400_third, RegisterActiveUsers_Dey_1400,
-                   EPG_Bahman_1400_first, EPG_Bahman_1400_second, EPG_Bahman_1400_third, RegisterActiveUsers_Bahman_1400):
+                   EPG_Bahman_1400_first, EPG_Bahman_1400_second, EPG_Bahman_1400_third, RegisterActiveUsers_Bahman_1400,
+                   EPG_Esfand_1400_first, EPG_Esfand_1400_second, EPG_Esfand_1400_third, RegisterActiveUsers_Esfand_1400):
     
     import xlsxwriter  
     import pandas as pd
@@ -152,7 +153,8 @@ def total_all_data(EPG_1397_sima, EPG_1397_ekhtesasi, EPG_1398_ekhtesasi, EPG_13
                           EPG_Aban_1400_first.loc[0, 'سیما'] + \
                           EPG_Azar_1400_first.loc[0, 'سیما'] + \
                           EPG_Dey_1400_first.loc[0, 'سیما'] + \
-                          EPG_Bahman_1400_first.loc[0, 'سیما']
+                          EPG_Bahman_1400_first.loc[0, 'سیما'] + \
+                          EPG_Esfand_1400_first.loc[0, 'سیما']
     EPG_1400_sima_visit=EPG_Farvardin_1400_first.loc[1, 'سیما'] + \
                         EPG_Ordibehesht_1400_first.loc[1, 'سیما'] + \
                         EPG_Khordad_1400_first.loc[1, 'سیما'] + \
@@ -163,7 +165,8 @@ def total_all_data(EPG_1397_sima, EPG_1397_ekhtesasi, EPG_1398_ekhtesasi, EPG_13
                         EPG_Aban_1400_first.loc[1, 'سیما'] + \
                         EPG_Azar_1400_first.loc[1, 'سیما'] + \
                         EPG_Dey_1400_first.loc[1, 'سیما'] + \
-                        EPG_Bahman_1400_first.loc[1, 'سیما']
+                        EPG_Bahman_1400_first.loc[1, 'سیما'] + \
+                        EPG_Esfand_1400_first.loc[1, 'سیما']
     EPG_1400_sima_duration=EPG_Farvardin_1400_first.loc[2, 'سیما'] + \
                            EPG_Ordibehesht_1400_first.loc[2, 'سیما'] + \
                            EPG_Khordad_1400_first.loc[2, 'سیما'] + \
@@ -174,7 +177,8 @@ def total_all_data(EPG_1397_sima, EPG_1397_ekhtesasi, EPG_1398_ekhtesasi, EPG_13
                            EPG_Aban_1400_first.loc[2, 'سیما'] + \
                            EPG_Azar_1400_first.loc[2, 'سیما'] + \
                            EPG_Dey_1400_first.loc[2, 'سیما'] + \
-                           EPG_Bahman_1400_first.loc[2, 'سیما']
+                           EPG_Bahman_1400_first.loc[2, 'سیما'] + \
+                           EPG_Esfand_1400_first.loc[2, 'سیما']
     EPG_1400_sima_channels=EPG_Farvardin_1400_first.loc[3, 'سیما'] + \
                            EPG_Ordibehesht_1400_first.loc[3, 'سیما'] + \
                            EPG_Khordad_1400_first.loc[3, 'سیما'] + \
@@ -185,7 +189,8 @@ def total_all_data(EPG_1397_sima, EPG_1397_ekhtesasi, EPG_1398_ekhtesasi, EPG_13
                            EPG_Aban_1400_first.loc[3, 'سیما'] + \
                            EPG_Azar_1400_first.loc[3, 'سیما'] + \
                            EPG_Dey_1400_first.loc[3, 'سیما']+ \
-                           EPG_Bahman_1400_first.loc[3, 'سیما']
+                           EPG_Bahman_1400_first.loc[3, 'سیما'] + \
+                           EPG_Esfand_1400_first.loc[3, 'سیما']
     EPG_1400_sima_operators=0
     EPG_1400_sima_operators = EPG_Farvardin_1400_first.loc[4, 'سیما'] + \
                               EPG_Ordibehesht_1400_first.loc[4, 'سیما'] + \
@@ -197,7 +202,8 @@ def total_all_data(EPG_1397_sima, EPG_1397_ekhtesasi, EPG_1398_ekhtesasi, EPG_13
                               EPG_Aban_1400_first.loc[4, 'سیما'] + \
                               EPG_Azar_1400_first.loc[4, 'سیما'] + \
                               EPG_Dey_1400_first.loc[4, 'سیما'] + \
-                              EPG_Bahman_1400_first.loc[4, 'سیما']
+                              EPG_Bahman_1400_first.loc[4, 'سیما'] + \
+                              EPG_Esfand_1400_first.loc[4, 'سیما']
     EPG_1400_RegisterUsers=RegisterActiveUsers_Farvardin_1400['register users'].sum() + \
                            RegisterActiveUsers_Ordibehesht_1400['register users'].sum() + \
                            RegisterActiveUsers_Khordad_1400['register users'].sum() + \
@@ -208,7 +214,8 @@ def total_all_data(EPG_1397_sima, EPG_1397_ekhtesasi, EPG_1398_ekhtesasi, EPG_13
                            RegisterActiveUsers_Aban_1400['register users'].sum() + \
                            RegisterActiveUsers_Azar_1400['register users'].sum() + \
                            RegisterActiveUsers_Dey_1400['register users'].sum() + \
-                           RegisterActiveUsers_Bahman_1400['register users'].sum()
+                           RegisterActiveUsers_Bahman_1400['register users'].sum() + \
+                           RegisterActiveUsers_Esfand_1400['register users'].sum()
     
     print("radio 1400")
     EPG_1400_radio_content=EPG_Farvardin_1400_first.loc[0, 'رادیویی'] + \
@@ -221,7 +228,8 @@ def total_all_data(EPG_1397_sima, EPG_1397_ekhtesasi, EPG_1398_ekhtesasi, EPG_13
                            EPG_Aban_1400_first.loc[0, 'رادیویی'] + \
                            EPG_Azar_1400_first.loc[0, 'رادیویی'] + \
                            EPG_Dey_1400_first.loc[0, 'رادیویی'] + \
-                           EPG_Bahman_1400_first.loc[0, 'رادیویی']
+                           EPG_Bahman_1400_first.loc[0, 'رادیویی'] + \
+                           EPG_Esfand_1400_first.loc[0, 'رادیویی']
     EPG_1400_radio_visit=EPG_Farvardin_1400_first.loc[1, 'رادیویی'] + \
                          EPG_Ordibehesht_1400_first.loc[1, 'رادیویی'] + \
                          EPG_Khordad_1400_first.loc[1, 'رادیویی'] + \
@@ -232,7 +240,8 @@ def total_all_data(EPG_1397_sima, EPG_1397_ekhtesasi, EPG_1398_ekhtesasi, EPG_13
                          EPG_Aban_1400_first.loc[1, 'رادیویی'] + \
                          EPG_Azar_1400_first.loc[1, 'رادیویی'] + \
                          EPG_Dey_1400_first.loc[1, 'رادیویی'] + \
-                         EPG_Bahman_1400_first.loc[1, 'رادیویی']
+                         EPG_Bahman_1400_first.loc[1, 'رادیویی'] + \
+                         EPG_Esfand_1400_first.loc[1, 'رادیویی']
     EPG_1400_radio_duration=EPG_Farvardin_1400_first.loc[2, 'رادیویی'] + \
                             EPG_Ordibehesht_1400_first.loc[2, 'رادیویی'] + \
                             EPG_Khordad_1400_first.loc[2, 'رادیویی'] + \
@@ -243,7 +252,8 @@ def total_all_data(EPG_1397_sima, EPG_1397_ekhtesasi, EPG_1398_ekhtesasi, EPG_13
                             EPG_Aban_1400_first.loc[2, 'رادیویی'] + \
                             EPG_Azar_1400_first.loc[2, 'رادیویی'] + \
                             EPG_Dey_1400_first.loc[2, 'رادیویی'] + \
-                            EPG_Bahman_1400_first.loc[2, 'رادیویی']
+                            EPG_Bahman_1400_first.loc[2, 'رادیویی'] + \
+                            EPG_Esfand_1400_first.loc[2, 'رادیویی']
     EPG_1400_radio_channels=EPG_Farvardin_1400_first.loc[3, 'رادیویی'] + \
                             EPG_Ordibehesht_1400_first.loc[3, 'رادیویی'] + \
                             EPG_Khordad_1400_first.loc[3, 'رادیویی'] + \
@@ -254,7 +264,8 @@ def total_all_data(EPG_1397_sima, EPG_1397_ekhtesasi, EPG_1398_ekhtesasi, EPG_13
                             EPG_Aban_1400_first.loc[3, 'رادیویی'] + \
                             EPG_Azar_1400_first.loc[3, 'رادیویی'] + \
                             EPG_Dey_1400_first.loc[3, 'رادیویی'] + \
-                            EPG_Bahman_1400_first.loc[3, 'رادیویی']
+                            EPG_Bahman_1400_first.loc[3, 'رادیویی'] + \
+                            EPG_Esfand_1400_first.loc[3, 'رادیویی']
     EPG_1400_radio_operators=0
     EPG_1400_radio_operators = EPG_Farvardin_1400_first.loc[4, 'رادیویی'] + \
                                EPG_Ordibehesht_1400_first.loc[4, 'رادیویی'] + \
@@ -266,7 +277,8 @@ def total_all_data(EPG_1397_sima, EPG_1397_ekhtesasi, EPG_1398_ekhtesasi, EPG_13
                                EPG_Aban_1400_first.loc[4, 'رادیویی'] + \
                                EPG_Azar_1400_first.loc[4, 'رادیویی'] + \
                                EPG_Dey_1400_first.loc[4, 'رادیویی'] + \
-                               EPG_Bahman_1400_first.loc[4, 'رادیویی']
+                               EPG_Bahman_1400_first.loc[4, 'رادیویی'] + \
+                               EPG_Esfand_1400_first.loc[4, 'رادیویی']
     EPG_1400_RegisterUsers=RegisterActiveUsers_Farvardin_1400['register users'].sum() + \
                            RegisterActiveUsers_Ordibehesht_1400['register users'].sum() + \
                            RegisterActiveUsers_Khordad_1400['register users'].sum() + \
@@ -277,7 +289,8 @@ def total_all_data(EPG_1397_sima, EPG_1397_ekhtesasi, EPG_1398_ekhtesasi, EPG_13
                            RegisterActiveUsers_Aban_1400['register users'].sum() + \
                            RegisterActiveUsers_Azar_1400['register users'].sum() + \
                            RegisterActiveUsers_Dey_1400['register users'].sum() + \
-                           RegisterActiveUsers_Bahman_1400['register users'].sum()
+                           RegisterActiveUsers_Bahman_1400['register users'].sum() + \
+                           RegisterActiveUsers_Esfand_1400['register users'].sum()
     
     print("ostani 1400")
     EPG_1400_ostani_content=EPG_Farvardin_1400_first.loc[0, 'استانی'] + \
@@ -290,7 +303,8 @@ def total_all_data(EPG_1397_sima, EPG_1397_ekhtesasi, EPG_1398_ekhtesasi, EPG_13
                             EPG_Aban_1400_first.loc[0, 'استانی'] + \
                             EPG_Azar_1400_first.loc[0, 'استانی'] + \
                             EPG_Dey_1400_first.loc[0, 'استانی'] + \
-                            EPG_Bahman_1400_first.loc[0, 'استانی']
+                            EPG_Bahman_1400_first.loc[0, 'استانی'] + \
+                            EPG_Esfand_1400_first.loc[0, 'استانی']
     EPG_1400_ostani_visit=EPG_Farvardin_1400_first.loc[1, 'استانی'] + \
                           EPG_Ordibehesht_1400_first.loc[1, 'استانی'] + \
                           EPG_Khordad_1400_first.loc[1, 'استانی'] + \
@@ -301,7 +315,8 @@ def total_all_data(EPG_1397_sima, EPG_1397_ekhtesasi, EPG_1398_ekhtesasi, EPG_13
                           EPG_Aban_1400_first.loc[1, 'استانی'] + \
                           EPG_Azar_1400_first.loc[1, 'استانی'] + \
                           EPG_Dey_1400_first.loc[1, 'استانی'] + \
-                          EPG_Bahman_1400_first.loc[1, 'استانی']
+                          EPG_Bahman_1400_first.loc[1, 'استانی'] + \
+                          EPG_Esfand_1400_first.loc[1, 'استانی']
     EPG_1400_ostani_duration=EPG_Farvardin_1400_first.loc[2, 'استانی'] + \
                              EPG_Ordibehesht_1400_first.loc[2, 'استانی'] + \
                              EPG_Khordad_1400_first.loc[2, 'استانی'] + \
@@ -312,7 +327,8 @@ def total_all_data(EPG_1397_sima, EPG_1397_ekhtesasi, EPG_1398_ekhtesasi, EPG_13
                              EPG_Aban_1400_first.loc[2, 'استانی'] + \
                              EPG_Azar_1400_first.loc[2, 'استانی'] + \
                              EPG_Dey_1400_first.loc[2, 'استانی'] + \
-                             EPG_Bahman_1400_first.loc[2, 'استانی']
+                             EPG_Bahman_1400_first.loc[2, 'استانی'] + \
+                             EPG_Esfand_1400_first.loc[2, 'استانی']
     EPG_1400_ostani_channels=EPG_Farvardin_1400_first.loc[3, 'استانی'] + \
                              EPG_Ordibehesht_1400_first.loc[3, 'استانی'] + \
                              EPG_Khordad_1400_first.loc[3, 'استانی'] + \
@@ -323,7 +339,8 @@ def total_all_data(EPG_1397_sima, EPG_1397_ekhtesasi, EPG_1398_ekhtesasi, EPG_13
                              EPG_Aban_1400_first.loc[3, 'استانی'] + \
                              EPG_Azar_1400_first.loc[3, 'استانی'] + \
                              EPG_Dey_1400_first.loc[3, 'استانی'] + \
-                             EPG_Bahman_1400_first.loc[3, 'استانی']
+                             EPG_Bahman_1400_first.loc[3, 'استانی'] + \
+                             EPG_Esfand_1400_first.loc[3, 'استانی']
     EPG_1400_ostani_operators=0
     EPG_1400_ostani_operators = EPG_Farvardin_1400_first.loc[4, 'استانی'] + \
                                 EPG_Ordibehesht_1400_first.loc[4, 'استانی'] + \
@@ -335,7 +352,8 @@ def total_all_data(EPG_1397_sima, EPG_1397_ekhtesasi, EPG_1398_ekhtesasi, EPG_13
                                 EPG_Aban_1400_first.loc[4, 'استانی'] + \
                                 EPG_Azar_1400_first.loc[4, 'استانی'] + \
                                 EPG_Dey_1400_first.loc[4, 'استانی'] + \
-                                EPG_Bahman_1400_first.loc[4, 'استانی']
+                                EPG_Bahman_1400_first.loc[4, 'استانی'] + \
+                                EPG_Esfand_1400_first.loc[4, 'استانی']
     EPG_1400_RegisterUsers=RegisterActiveUsers_Farvardin_1400['register users'].sum() + \
                            RegisterActiveUsers_Ordibehesht_1400['register users'].sum() + \
                            RegisterActiveUsers_Khordad_1400['register users'].sum() + \
@@ -346,7 +364,8 @@ def total_all_data(EPG_1397_sima, EPG_1397_ekhtesasi, EPG_1398_ekhtesasi, EPG_13
                            RegisterActiveUsers_Aban_1400['register users'].sum() + \
                            RegisterActiveUsers_Azar_1400['register users'].sum() + \
                            RegisterActiveUsers_Dey_1400['register users'].sum() + \
-                           RegisterActiveUsers_Bahman_1400['register users'].sum()
+                           RegisterActiveUsers_Bahman_1400['register users'].sum() + \
+                           RegisterActiveUsers_Esfand_1400['register users'].sum()
     
     print("ekhtesasi 1400")
     EPG_1400_ekhtesasi_content=EPG_Farvardin_1400_first.loc[0, 'اختصاصی'] + \
@@ -359,7 +378,8 @@ def total_all_data(EPG_1397_sima, EPG_1397_ekhtesasi, EPG_1398_ekhtesasi, EPG_13
                                EPG_Aban_1400_first.loc[0, 'اختصاصی'] + \
                                EPG_Azar_1400_first.loc[0, 'اختصاصی'] + \
                                EPG_Dey_1400_first.loc[0, 'اختصاصی'] + \
-                               EPG_Bahman_1400_first.loc[0, 'اختصاصی']
+                               EPG_Bahman_1400_first.loc[0, 'اختصاصی'] + \
+                               EPG_Esfand_1400_first.loc[0, 'اختصاصی']
     EPG_1400_ekhtesasi_visit=EPG_Farvardin_1400_first.loc[1, 'اختصاصی'] + \
                              EPG_Ordibehesht_1400_first.loc[1, 'اختصاصی'] + \
                              EPG_Khordad_1400_first.loc[1, 'اختصاصی'] + \
@@ -370,7 +390,8 @@ def total_all_data(EPG_1397_sima, EPG_1397_ekhtesasi, EPG_1398_ekhtesasi, EPG_13
                              EPG_Aban_1400_first.loc[1, 'اختصاصی'] + \
                              EPG_Azar_1400_first.loc[1, 'اختصاصی'] + \
                              EPG_Dey_1400_first.loc[1, 'اختصاصی'] + \
-                             EPG_Bahman_1400_first.loc[1, 'اختصاصی']
+                             EPG_Bahman_1400_first.loc[1, 'اختصاصی'] + \
+                             EPG_Esfand_1400_first.loc[1, 'اختصاصی']
     EPG_1400_ekhtesasi_duration=EPG_Farvardin_1400_first.loc[2, 'اختصاصی'] + \
                                 EPG_Ordibehesht_1400_first.loc[2, 'اختصاصی'] + \
                                 EPG_Khordad_1400_first.loc[2, 'اختصاصی'] + \
@@ -381,7 +402,8 @@ def total_all_data(EPG_1397_sima, EPG_1397_ekhtesasi, EPG_1398_ekhtesasi, EPG_13
                                 EPG_Aban_1400_first.loc[2, 'اختصاصی'] + \
                                 EPG_Azar_1400_first.loc[2, 'اختصاصی'] + \
                                 EPG_Dey_1400_first.loc[2, 'اختصاصی'] + \
-                                EPG_Bahman_1400_first.loc[2, 'اختصاصی']
+                                EPG_Bahman_1400_first.loc[2, 'اختصاصی'] + \
+                                EPG_Esfand_1400_first.loc[2, 'اختصاصی']
     EPG_1400_ekhtesasi_channels=EPG_Farvardin_1400_first.loc[3, 'اختصاصی'] + \
                                 EPG_Ordibehesht_1400_first.loc[3, 'اختصاصی'] + \
                                 EPG_Khordad_1400_first.loc[3, 'اختصاصی'] + \
@@ -392,7 +414,8 @@ def total_all_data(EPG_1397_sima, EPG_1397_ekhtesasi, EPG_1398_ekhtesasi, EPG_13
                                 EPG_Aban_1400_first.loc[3, 'اختصاصی'] + \
                                 EPG_Azar_1400_first.loc[3, 'اختصاصی'] + \
                                 EPG_Dey_1400_first.loc[3, 'اختصاصی'] + \
-                                EPG_Bahman_1400_first.loc[3, 'اختصاصی']
+                                EPG_Bahman_1400_first.loc[3, 'اختصاصی'] + \
+                                EPG_Esfand_1400_first.loc[3, 'اختصاصی']
     EPG_1400_ekhtesasi_operators=0
     EPG_1400_ekhtesasi_operators = EPG_Farvardin_1400_first.loc[4, 'اختصاصی'] + \
                                    EPG_Ordibehesht_1400_first.loc[4, 'اختصاصی'] + \
@@ -404,7 +427,8 @@ def total_all_data(EPG_1397_sima, EPG_1397_ekhtesasi, EPG_1398_ekhtesasi, EPG_13
                                    EPG_Aban_1400_first.loc[4, 'اختصاصی'] + \
                                    EPG_Azar_1400_first.loc[4, 'اختصاصی'] + \
                                    EPG_Dey_1400_first.loc[4, 'اختصاصی'] + \
-                                   EPG_Bahman_1400_first.loc[4, 'اختصاصی']
+                                   EPG_Bahman_1400_first.loc[4, 'اختصاصی'] + \
+                                   EPG_Esfand_1400_first.loc[4, 'اختصاصی']
     EPG_1400_RegisterUsers=RegisterActiveUsers_Farvardin_1400['register users'].sum() + \
                            RegisterActiveUsers_Ordibehesht_1400['register users'].sum() + \
                            RegisterActiveUsers_Khordad_1400['register users'].sum() + \
@@ -415,7 +439,8 @@ def total_all_data(EPG_1397_sima, EPG_1397_ekhtesasi, EPG_1398_ekhtesasi, EPG_13
                            RegisterActiveUsers_Aban_1400['register users'].sum() + \
                            RegisterActiveUsers_Azar_1400['register users'].sum() + \
                            RegisterActiveUsers_Dey_1400['register users'].sum() + \
-                           RegisterActiveUsers_Bahman_1400['register users'].sum()
+                           RegisterActiveUsers_Bahman_1400['register users'].sum() + \
+                           RegisterActiveUsers_Esfand_1400['register users'].sum()
     
     EPG_1400_total=pd.DataFrame()
     EPG_1400_total={'parameters': ['تعداد محتوا', 'تعداد بازدید', 'زمان بازدید (به دقیقه)', 'تعداد اپراتور', 'تعداد شبکه', 'کل کاربران ثبت نامی',],

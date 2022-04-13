@@ -23,12 +23,12 @@ start = time.time()
 
 ########################## Get Data ##########################
 print("get data")
-all_data=pd.read_excel(r'E:\hard\report\1400\Bahman\input\EPG Bahman 1400.xlsx')
-site_channels_primary=pd.read_excel(r'E:\hard\report\1400\Bahman\input\سایت شبکه ها.xlsx')
-RegisterActiveUsers=pd.read_excel(r'E:\hard\report\1400\Bahman\input\RegisterActiveUsers.xlsx')
-vod_lenz=pd.read_csv(r'E:\hard\report\1400\Bahman\input\LenzBahman1400.csv')
-vod_tva=pd.read_excel(r'E:\hard\report\1400\Bahman\input\TvaBahman1400.xlsx', sheet_name='Videos')
-vod_aio=pd.read_excel(r'E:\hard\report\1400\Bahman\input\AioBahman1400.xlsx')
+all_data=pd.read_excel(r'E:\hard\report\1400\Esfand\input\EPG Esfand 1400.xlsx')
+site_channels_primary=pd.read_excel(r'E:\hard\report\1400\Esfand\input\سایت شبکه ها.xlsx')
+RegisterActiveUsers=pd.read_excel(r'E:\hard\report\1400\Esfand\input\RegisterActiveUsers.xlsx')
+vod_lenz=pd.read_csv(r'E:\hard\report\1400\Esfand\input\LenzEsfand1400.csv')
+vod_tva=pd.read_excel(r'E:\hard\report\1400\Esfand\input\TvaEsfand1400.xlsx', sheet_name='Videos')
+vod_aio=pd.read_excel(r'E:\hard\report\1400\Esfand\input\AioEsfand1400.xlsx')
 ########################## Sepehr $ Channels Site ##########################
 print("SepehrChannelsSite")
 from SepehrChannelsSite import *
@@ -257,93 +257,100 @@ print("alexa")
 #alexa_data=alexa(sites_name_alexa)
 ########################## input of 1400 data ##########################
 EPG_Farvardin_1400_first=pd.read_excel(r'E:\python codes\data statistics\output\output.sending.hard\خلاصه آمار.xlsx', sheet_name='آمار انواع سرویس های سازمان')
-del EPG_Farvardin_1400_first['Unnamed: 0']
+#del EPG_Farvardin_1400_first['Unnamed: 0']
 EPG_Farvardin_1400_second=pd.read_excel(r'E:\python codes\data statistics\output\output.sending.hard\خلاصه آمار.xlsx', sheet_name='آمار اپراتورها')
-del EPG_Farvardin_1400_second['Unnamed: 0']
+#del EPG_Farvardin_1400_second['Unnamed: 0']
 EPG_Farvardin_1400_third=pd.read_excel(r'E:\python codes\data statistics\output\output.sending.hard\خلاصه آمار.xlsx', sheet_name='اپراتورها و سرویسهای سازمان')
-del EPG_Farvardin_1400_third['Unnamed: 0']
+#del EPG_Farvardin_1400_third['Unnamed: 0']
 RegisterActiveUsers_Farvardin_1400=pd.read_excel(r'E:\hard\report\1400\farvardin\input\RegisterActiveUsers.xlsx')
 
 EPG_Ordibehesht_1400_first=pd.read_excel(r'E:\python codes\data statistics\output\output.sending.hard\خلاصه آمار.xlsx', sheet_name='آمار انواع سرویس های سازمان')
-del EPG_Ordibehesht_1400_first['Unnamed: 0']
+#del EPG_Ordibehesht_1400_first['Unnamed: 0']
 EPG_Ordibehesht_1400_second=pd.read_excel(r'E:\python codes\data statistics\output\output.sending.hard\خلاصه آمار.xlsx', sheet_name='آمار اپراتورها')
-del EPG_Ordibehesht_1400_second['Unnamed: 0']
+#del EPG_Ordibehesht_1400_second['Unnamed: 0']
 EPG_Ordibehesht_1400_third=pd.read_excel(r'E:\python codes\data statistics\output\output.sending.hard\خلاصه آمار.xlsx', sheet_name='اپراتورها و سرویسهای سازمان')
-del EPG_Ordibehesht_1400_third['Unnamed: 0']
+#del EPG_Ordibehesht_1400_third['Unnamed: 0']
 RegisterActiveUsers_Ordibehesht_1400=pd.read_excel(r'E:\hard\report\1400\ordibehesht\input\RegisterActiveUsers.xlsx')
 
 EPG_Khordad_1400_first=pd.read_excel(r'E:\python codes\data statistics\output\output.sending.hard\خلاصه آمار.xlsx', sheet_name='آمار انواع سرویس های سازمان')
-del EPG_Khordad_1400_first['Unnamed: 0']
+#del EPG_Khordad_1400_first['Unnamed: 0']
 EPG_Khordad_1400_second=pd.read_excel(r'E:\python codes\data statistics\output\output.sending.hard\خلاصه آمار.xlsx', sheet_name='آمار اپراتورها')
-del EPG_Khordad_1400_second['Unnamed: 0']
+#del EPG_Khordad_1400_second['Unnamed: 0']
 EPG_Khordad_1400_third=pd.read_excel(r'E:\python codes\data statistics\output\output.sending.hard\خلاصه آمار.xlsx', sheet_name='اپراتورها و سرویسهای سازمان')
-del EPG_Khordad_1400_third['Unnamed: 0']
+#del EPG_Khordad_1400_third['Unnamed: 0']
 RegisterActiveUsers_Khordad_1400=pd.read_excel(r'E:\hard\report\1400\Khordad\input\RegisterActiveUsers.xlsx')
 
 EPG_Tir_1400_first=pd.read_excel(r'E:\python codes\data statistics\output\output.sending.hard\خلاصه آمار.xlsx', sheet_name='آمار انواع سرویس های سازمان')
-del EPG_Tir_1400_first['Unnamed: 0']
+#del EPG_Tir_1400_first['Unnamed: 0']
 EPG_Tir_1400_second=pd.read_excel(r'E:\python codes\data statistics\output\output.sending.hard\خلاصه آمار.xlsx', sheet_name='آمار اپراتورها')
-del EPG_Tir_1400_second['Unnamed: 0']
+#del EPG_Tir_1400_second['Unnamed: 0']
 EPG_Tir_1400_third=pd.read_excel(r'E:\python codes\data statistics\output\output.sending.hard\خلاصه آمار.xlsx', sheet_name='اپراتورها و سرویسهای سازمان')
-del EPG_Tir_1400_third['Unnamed: 0']
+#del EPG_Tir_1400_third['Unnamed: 0']
 RegisterActiveUsers_Tir_1400=pd.read_excel(r'E:\hard\report\1400\Tir\input\RegisterActiveUsers.xlsx')
 
 EPG_Mordad_1400_first=pd.read_excel(r'E:\python codes\data statistics\output\output.sending.hard\خلاصه آمار.xlsx', sheet_name='آمار انواع سرویس های سازمان')
-del EPG_Mordad_1400_first['Unnamed: 0']
+#del EPG_Mordad_1400_first['Unnamed: 0']
 EPG_Mordad_1400_second=pd.read_excel(r'E:\python codes\data statistics\output\output.sending.hard\خلاصه آمار.xlsx', sheet_name='آمار اپراتورها')
-del EPG_Mordad_1400_second['Unnamed: 0']
+#del EPG_Mordad_1400_second['Unnamed: 0']
 EPG_Mordad_1400_third=pd.read_excel(r'E:\python codes\data statistics\output\output.sending.hard\خلاصه آمار.xlsx', sheet_name='اپراتورها و سرویسهای سازمان')
-del EPG_Mordad_1400_third['Unnamed: 0']
+#del EPG_Mordad_1400_third['Unnamed: 0']
 RegisterActiveUsers_Mordad_1400=pd.read_excel(r'E:\hard\report\1400\Mordad\input\RegisterActiveUsers.xlsx')
 
 EPG_Shahrivar_1400_first=pd.read_excel(r'E:\python codes\data statistics\output\output.sending.hard\خلاصه آمار.xlsx', sheet_name='آمار انواع سرویس های سازمان')
-del EPG_Shahrivar_1400_first['Unnamed: 0']
+#del EPG_Shahrivar_1400_first['Unnamed: 0']
 EPG_Shahrivar_1400_second=pd.read_excel(r'E:\python codes\data statistics\output\output.sending.hard\خلاصه آمار.xlsx', sheet_name='آمار اپراتورها')
-del EPG_Shahrivar_1400_second['Unnamed: 0']
+#del EPG_Shahrivar_1400_second['Unnamed: 0']
 EPG_Shahrivar_1400_third=pd.read_excel(r'E:\python codes\data statistics\output\output.sending.hard\خلاصه آمار.xlsx', sheet_name='اپراتورها و سرویسهای سازمان')
-del EPG_Shahrivar_1400_third['Unnamed: 0']
+#del EPG_Shahrivar_1400_third['Unnamed: 0']
 RegisterActiveUsers_Shahrivar_1400=pd.read_excel(r'E:\hard\report\1400\Shahrivar\input\RegisterActiveUsers.xlsx')
 
 EPG_Mehr_1400_first=pd.read_excel(r'E:\python codes\data statistics\output\output.sending.hard\خلاصه آمار.xlsx', sheet_name='آمار انواع سرویس های سازمان')
-del EPG_Mehr_1400_first['Unnamed: 0']
+#del EPG_Mehr_1400_first['Unnamed: 0']
 EPG_Mehr_1400_second=pd.read_excel(r'E:\python codes\data statistics\output\output.sending.hard\خلاصه آمار.xlsx', sheet_name='آمار اپراتورها')
-del EPG_Mehr_1400_second['Unnamed: 0']
+#del EPG_Mehr_1400_second['Unnamed: 0']
 EPG_Mehr_1400_third=pd.read_excel(r'E:\python codes\data statistics\output\output.sending.hard\خلاصه آمار.xlsx', sheet_name='اپراتورها و سرویسهای سازمان')
-del EPG_Mehr_1400_third['Unnamed: 0']
+#del EPG_Mehr_1400_third['Unnamed: 0']
 RegisterActiveUsers_Mehr_1400=pd.read_excel(r'E:\hard\report\1400\Mehr\input\RegisterActiveUsers.xlsx')
 
 EPG_Aban_1400_first=pd.read_excel(r'E:\python codes\data statistics\output\output.sending.hard\خلاصه آمار.xlsx', sheet_name='آمار انواع سرویس های سازمان')
-del EPG_Aban_1400_first['Unnamed: 0']
+#del EPG_Aban_1400_first['Unnamed: 0']
 EPG_Aban_1400_second=pd.read_excel(r'E:\python codes\data statistics\output\output.sending.hard\خلاصه آمار.xlsx', sheet_name='آمار اپراتورها')
-del EPG_Aban_1400_second['Unnamed: 0']
+#del EPG_Aban_1400_second['Unnamed: 0']
 EPG_Aban_1400_third=pd.read_excel(r'E:\python codes\data statistics\output\output.sending.hard\خلاصه آمار.xlsx', sheet_name='اپراتورها و سرویسهای سازمان')
-del EPG_Aban_1400_third['Unnamed: 0']
+#del EPG_Aban_1400_third['Unnamed: 0']
 RegisterActiveUsers_Aban_1400=pd.read_excel(r'E:\hard\report\1400\Aban\input\RegisterActiveUsers.xlsx')
 
 EPG_Azar_1400_first=pd.read_excel(r'E:\python codes\data statistics\output\output.sending.hard\خلاصه آمار.xlsx', sheet_name='آمار انواع سرویس های سازمان')
-del EPG_Azar_1400_first['Unnamed: 0']
+#del EPG_Azar_1400_first['Unnamed: 0']
 EPG_Azar_1400_second=pd.read_excel(r'E:\python codes\data statistics\output\output.sending.hard\خلاصه آمار.xlsx', sheet_name='آمار اپراتورها')
-del EPG_Azar_1400_second['Unnamed: 0']
+#del EPG_Azar_1400_second['Unnamed: 0']
 EPG_Azar_1400_third=pd.read_excel(r'E:\python codes\data statistics\output\output.sending.hard\خلاصه آمار.xlsx', sheet_name='اپراتورها و سرویسهای سازمان')
-del EPG_Azar_1400_third['Unnamed: 0']
+#del EPG_Azar_1400_third['Unnamed: 0']
 RegisterActiveUsers_Azar_1400=pd.read_excel(r'E:\hard\report\1400\Azar\input\RegisterActiveUsers.xlsx')
 
 EPG_Dey_1400_first=pd.read_excel(r'E:\python codes\data statistics\output\output.sending.hard\خلاصه آمار.xlsx', sheet_name='آمار انواع سرویس های سازمان')
-del EPG_Dey_1400_first['Unnamed: 0']
+#del EPG_Dey_1400_first['Unnamed: 0']
 EPG_Dey_1400_second=pd.read_excel(r'E:\python codes\data statistics\output\output.sending.hard\خلاصه آمار.xlsx', sheet_name='آمار اپراتورها')
-del EPG_Dey_1400_second['Unnamed: 0']
+#del EPG_Dey_1400_second['Unnamed: 0']
 EPG_Dey_1400_third=pd.read_excel(r'E:\python codes\data statistics\output\output.sending.hard\خلاصه آمار.xlsx', sheet_name='اپراتورها و سرویسهای سازمان')
-del EPG_Dey_1400_third['Unnamed: 0']
+#del EPG_Dey_1400_third['Unnamed: 0']
 RegisterActiveUsers_Dey_1400=pd.read_excel(r'E:\hard\report\1400\Dey\input\RegisterActiveUsers.xlsx')
 
 EPG_Bahman_1400_first=pd.read_excel(r'E:\python codes\data statistics\output\output.sending.hard\خلاصه آمار.xlsx', sheet_name='آمار انواع سرویس های سازمان')
-del EPG_Bahman_1400_first['Unnamed: 0']
+#del EPG_Bahman_1400_first['Unnamed: 0']
 EPG_Bahman_1400_second=pd.read_excel(r'E:\python codes\data statistics\output\output.sending.hard\خلاصه آمار.xlsx', sheet_name='آمار اپراتورها')
-del EPG_Bahman_1400_second['Unnamed: 0']
+#del EPG_Bahman_1400_second['Unnamed: 0']
 EPG_Bahman_1400_third=pd.read_excel(r'E:\python codes\data statistics\output\output.sending.hard\خلاصه آمار.xlsx', sheet_name='اپراتورها و سرویسهای سازمان')
-del EPG_Bahman_1400_third['Unnamed: 0']
+#del EPG_Bahman_1400_third['Unnamed: 0']
 RegisterActiveUsers_Bahman_1400=pd.read_excel(r'E:\hard\report\1400\Bahman\input\RegisterActiveUsers.xlsx')
 
+EPG_Esfand_1400_first=pd.read_excel(r'E:\python codes\data statistics\output\output.sending.hard\خلاصه آمار.xlsx', sheet_name='آمار انواع سرویس های سازمان')
+#del EPG_Esfand_1400_first['Unnamed: 0']
+EPG_Esfand_1400_second=pd.read_excel(r'E:\python codes\data statistics\output\output.sending.hard\خلاصه آمار.xlsx', sheet_name='آمار اپراتورها')
+#del EPG_Esfand_1400_second['Unnamed: 0']
+EPG_Esfand_1400_third=pd.read_excel(r'E:\python codes\data statistics\output\output.sending.hard\خلاصه آمار.xlsx', sheet_name='اپراتورها و سرویسهای سازمان')
+#del EPG_Esfand_1400_third['Unnamed: 0']
+RegisterActiveUsers_Esfand_1400=pd.read_excel(r'E:\hard\report\1400\Esfand\input\RegisterActiveUsers.xlsx')
 ########################## Run of total_all_data Function ##########################
 print("total_all_data")
 [EPG_1397_total, EPG_1398_total, EPG_1399_total, EPG_1400_total]=total_all_data(EPG_1397_sima, EPG_1397_ekhtesasi, EPG_1398_ekhtesasi, EPG_1399_ekhtesasi, \
@@ -365,7 +372,8 @@ print("total_all_data")
                    EPG_Aban_1400_first, EPG_Aban_1400_second, EPG_Aban_1400_third, RegisterActiveUsers_Aban_1400,
                    EPG_Azar_1400_first, EPG_Azar_1400_second, EPG_Azar_1400_third, RegisterActiveUsers_Azar_1400,
                    EPG_Dey_1400_first, EPG_Dey_1400_second, EPG_Dey_1400_third, RegisterActiveUsers_Dey_1400,
-                   EPG_Bahman_1400_first, EPG_Bahman_1400_second, EPG_Bahman_1400_third, RegisterActiveUsers_Bahman_1400)
+                   EPG_Bahman_1400_first, EPG_Bahman_1400_second, EPG_Bahman_1400_third, RegisterActiveUsers_Bahman_1400,
+                   EPG_Esfand_1400_first, EPG_Esfand_1400_second, EPG_Esfand_1400_third, RegisterActiveUsers_Esfand_1400)
 
 
 

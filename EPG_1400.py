@@ -619,10 +619,10 @@ def EPG_1400(all_data, sima, RegisterActiveUsers):
     
     current_month_all_data_summary=current_month_all_data_summary.rename(columns={'parameters': 'پارامترها', 'statistics': 'آمار'})
     
-    writer = pd.ExcelWriter('E:/hard/report/total EPG/EPG 1400/ماه بهمن 1400.xlsx', engine='xlsxwriter')
+    writer = pd.ExcelWriter('E:/hard/report/total EPG/EPG 1400/ماه اسفند 1400.xlsx', engine='xlsxwriter')
     current_month_sima_visit_channels.to_excel(writer, 'آمار بازدید شبکه های سیما')
     current_month_operator_data.to_excel(writer, 'آمار اپراتورها')
-    current_month_all_data_summary.to_excel(writer, 'خلاصه آمار ماه بهمن')
+    current_month_all_data_summary.to_excel(writer, 'خلاصه آمار ماه اسفند')
     writer.save()
     
     return current_month_sima_visit_channels, current_month_operator_data, current_month_all_data_summary
